@@ -76,7 +76,7 @@
 
 <style>
   .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 </style>
@@ -127,13 +127,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Dive3D: Diverse Distillation-based Text-to-3D <br> Generation via Score
+          <h1 class="title is-2 publication-title">Dive3D: Diverse Distillation-based Text-to-3D <br> Generation via Score
             Implicit Matching</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://openreview.net/profile?id=%7EWeimin_Bai1">Weimin Bai</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=M6bEs8IAAAAJ&hl=en&oi=ao">Weimin Bai</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://ai4scientificimaging.org/dive3d/">Yubo Li</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=moOB0R4AAAAJ&hl=en&oi=ao">Yubo Li</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://wenzhengchen.github.io/">Wenzheng Chen</a><sup>1</sup>,
             </span>
@@ -204,7 +204,7 @@
 <!--              </span>-->
             </div>
 <div>
-        <span class="center"><img src="./static/images/img-teaser.jpg" style="width:850px;"></span>
+        <span class="center"><img src="./static/images/img-teaser.jpg" style="width:750px;"></span>
       </div>
           </div>
         </div>
@@ -293,6 +293,27 @@
 
 <section class="" style="padding-bottom: 3rem">
   <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+<!--        <div class="publication-video">-->
+<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
+<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--        </div>-->
+        <div>
+        <span class="center"><img src="./static/images/img_1.jpeg" style="width:750px;"></span><br>
+          <!-- <p class="bold-and-large">E-step, draw samples from LDMs: </p>
+            <span class="center"><img src="./static/images/img_13.png" style="width:550px;"></span><br>
+          <br>
+          <p class="bold-and-large">M-step, update forward model through MAP:
+              <span class="center"><img src="./static/images/img_14.png" style="width:550px;"></span><br>
+          </p>
+          <br>
+          * Further details can be found in the paper. -->
+        </div>
+      </div>
+    </div>
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -307,26 +328,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-<!--        <div class="publication-video">-->
-<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
-<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--        </div>-->
-        <div>
-        <span class="center"><img src="./static/images/img_1.jpeg" style="width:850px;"></span><br>
-          <!-- <p class="bold-and-large">E-step, draw samples from LDMs: </p>
-            <span class="center"><img src="./static/images/img_13.png" style="width:550px;"></span><br>
-          <br>
-          <p class="bold-and-large">M-step, update forward model through MAP:
-              <span class="center"><img src="./static/images/img_14.png" style="width:550px;"></span><br>
-          </p>
-          <br>
-          * Further details can be found in the paper. -->
-        </div>
-      </div>
-    </div>
+    
     <!--/ Paper video. -->
   </div>
 </section>
@@ -705,6 +707,118 @@
           <p class="has-text-justified" style="font-size: 0.9em;">
             <sup>1</sup> Our metrics differ from those reported in the original DreamReward paper because GPT-4V has been deprecated in GPTEval3D, so we instead use GPT-4o-mini.
           </p>
+
+          <!-- <div class="table-container" style="margin: 20px 0;">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <caption style="text-align: center; margin-bottom: 10px; color: red;">Quantitative comparison of diversity and quality. Arrows indicate whether higher ($\uparrow$) or lower ($\downarrow$) values are better.</caption>
+              <thead>
+                <tr>
+                  <th>Methods</th>
+                  <th>CLIP-D $\uparrow$</th>
+                  <th>LPIPS-D $\uparrow$</th>
+                  <th>Chamfer-D $\uparrow$</th>
+                  <th>FID $\downarrow$</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Prolific Dreamer (KL-based)</td>
+                  <td>0.3908</td>
+                  <td>0.485</td>
+                  <td>0.072</td>
+                  <td>207.34</td>
+                </tr>
+                <tr>
+                  <td><strong>Dive3D (Ours, Score-based)</strong></td>
+                  <td><strong>0.4483</strong></td>
+                  <td><strong>0.551</strong></td>
+                  <td><strong>0.115</strong></td>
+                  <td><strong>168.59</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+
+          <div class="table-container" style="margin: 20px 0;">
+            <p style="text-align: center; margin-bottom: 10px; color: black;"><strong>Quantitative comparison of diversity and quality</strong>. Arrows indicate whether higher ($\uparrow$) or lower ($\downarrow$) values are better.</p>
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th><strong>Method</strong></th>
+                  <th><strong>CLIP-D $\uparrow$</strong></th>
+                  <th><strong>LPIPS-D $\uparrow$</strong></th>
+                  <th><strong>Chamfer-D $\uparrow$</strong></th>
+                  <th><strong>FID $\downarrow$</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Prolific Dreamer (KL-based)</td>
+                  <td>0.3908</td>
+                  <td>0.485</td>
+                  <td>0.072</td>
+                  <td>207.34</td>
+                </tr>
+                <tr>
+                  <td><strong>Dive3D (Ours, Score-based)</strong></td>
+                  <td><strong>0.4483</strong></td>
+                  <td><strong>0.551</strong></td>
+                  <td><strong>0.115</strong></td>
+                  <td><strong>168.59</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="title is-3 has-text-left">Computational Cost</h2>
+          <div class="content has-text-justified">
+            <p>
+              We analyze the runtime and memory overhead of Dive3D in Table. The cost depends on the diffusion backbone. When using MVDiffusion, our method is comparable to other reward-guided methods like DreamReward. When using Stable Diffusion, our method is slightly slower than ProlificDreamer (NeRF) and requires more memory due to the reward guidance. In both scenarios, the computational cost is justified by the significant gains in generation quality and diversity. All experiments were run on a single NVIDIA A100 GPU.
+            </p>
+          </div>
+
+          <div class="table-container" style="margin: 20px 0;">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <caption style="text-align: center; margin-bottom: 10px; color: black;">Computational cost and performance comparison, broken down by diffusion backbone.</caption>
+              <thead>
+                <tr>
+                  <th><strong>Diffusion Backbone</strong></th>
+                  <th><strong>Method</strong></th>
+                  <th><strong>Generation Time</strong></th>
+                  <th><strong>Peak Memory (GB)</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3" style="vertical-align: middle;">MVDiffusion</td>
+                  <td>MVDream</td>
+                  <td>0.7 hours</td>
+                  <td>∼14</td>
+                </tr>
+                <tr>
+                  <td>DreamReward</td>
+                  <td>1.0 hours</td>
+                  <td>∼22</td>
+                </tr>
+                <tr>
+                  <td><strong>Dive3D (Ours)</strong></td>
+                  <td><strong>1.0 hours</strong></td>
+                  <td><strong>∼22</strong></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" style="vertical-align: middle;">Stable Diffusion</td>
+                  <td>ProlificDreamer</td>
+                  <td>7.9 hours</td>
+                  <td>∼27</td>
+                </tr>
+                <tr>
+                  <td><strong>Dive3D (Ours)</strong></td>
+                  <td><strong>9.0 hours</strong></td>
+                  <td><strong>∼35</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -717,11 +831,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{weimin2025dive3d,
-  author    = {Weimin, Bai and Yubo, Li and Wenzheng, Chen and Weijian, Luo and He, Sun},
-  title     = {Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching},
-  journal   = {arXiv preprint arXiv:2506.13594},
-  year      = {2025},
+    <pre><code>@article{bai2025dive3d,
+      title     = {Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching},
+      author    = {Weimin, Bai and Yubo, Li and Wenzheng, Chen and Weijian, Luo and He, Sun},
+      journal   = {Transactions on Machine Learning Research},
+      issn      = {2835-8856},
+      year      = {2025},
+      month     = {12},
+      url       = {https://openreview.net/forum?id=OUYMueHLMf&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DTMLR%2FAuthors%23your-submissions)},
+      note      = {}
 }</code></pre>
   </div>
 </section>
