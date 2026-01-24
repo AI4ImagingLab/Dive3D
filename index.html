@@ -70,6 +70,33 @@
             font-weight: bold; /* 加粗 */
             font-size: 24px; /* 加大字体大小，你可以根据需要调整这个值 */
         }
+        
+        @keyframes rotate3d {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        /* 统一资源宽度样式 */
+        .unified-resource {
+            max-width: 750px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -203,10 +230,28 @@
 <!--                  </a>-->
 <!--              </span>-->
             </div>
-<div>
-        <span class="center"><img src="./static/images/img-teaser.jpg" style="width:750px;"></span>
-      </div>
           </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="margin-top: 20px; text-align: center;">
+            <!-- 3D Generation 标签 - 放在图片上方 -->
+            <div style="display: inline-flex; align-items: center; gap: 10px; 
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                        color: white; padding: 12px 24px; border-radius: 30px; font-weight: bold; 
+                        font-size: 18px; box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+                        margin-bottom: 15px; border: 2px solid rgba(255, 255, 255, 0.3);">
+              <i class="fas fa-cube" style="font-size: 20px; animation: pulse 2s ease-in-out infinite;"></i>
+              <span>Text to 3D Generation</span>
+              <i class="fas fa-sync-alt" style="font-size: 18px; animation: rotate3d 3s linear infinite; margin-left: 5px;"></i>
+            </div>
+            <div style="display: block; text-align: center;">
+              <img src="./static/images/img-teaser.jpg" style="width:100%; max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); display: block; margin: 0 auto;">
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -302,7 +347,7 @@
 <!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 <!--        </div>-->
         <div>
-        <span class="center"><img src="./static/images/img_1.jpeg" style="width:750px;"></span><br>
+        <span class="center"><img src="./static/images/img_1.jpeg" style="width:1000px; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.2);"></span><br>
           <!-- <p class="bold-and-large">E-step, draw samples from LDMs: </p>
             <span class="center"><img src="./static/images/img_13.png" style="width:550px;"></span><br>
           <br>
@@ -335,15 +380,15 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Video Results</h2>
         <div class="content">
           <!-- 第一行视频 -->
           <div class="columns is-multiline">
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/Several large, solid, cube-shaped parcels, wrapped in brown paper and tied with string, each labeled with a different destination, awaiting dispatch in a post office/it16000-test.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -352,7 +397,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/Orange monarch butterfly resting on a dandelion/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Orange monarch butterfly</p>
@@ -360,7 +405,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A cat pondering the mysteries of the universe/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">A cat pondering the mysteries</p>
@@ -372,7 +417,7 @@
           <div class="columns is-multiline">
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/Floating bonsai tree, roots in mid-air/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Floating bonsai tree</p>
@@ -380,7 +425,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A large, multi-layered, symmetrical wedding cake, with smooth fondant, delicate piping, and lifelike sugar flowers in full bloom, displayed on a silver stand/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Multi-layered wedding cake</p>
@@ -388,7 +433,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A carved wooden bear with a salmon in mouth/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Carved wooden bear</p>
@@ -400,7 +445,7 @@
           <div class="columns is-multiline">
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A sequence of street lamps, casting pools of light on cobblestone paths as twilight descends/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Sequence of street lamps</p>
@@ -408,7 +453,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A golden retriever plush toy, floppy-eare/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">Golden retriever plush toy</p>
@@ -416,7 +461,7 @@
             </div>
             <div class="column is-4">
               <div class="box">
-                <video controls autoplay muted loop style="width: 100%;">
+                <video controls autoplay muted loop style="width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto;">
                   <source src="./static/Video/A torn hat/it16000-test.mp4" type="video/mp4">
                 </video>
                 <p class="has-text-centered" style="margin-top: 10px;">A torn hat</p>
@@ -432,8 +477,8 @@
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
 <!--        <h2 class="title is-3">Results</h2>-->
 
         <!-- Comparison with Stable Diffusion baselines -->
@@ -450,28 +495,28 @@
               <div style="text-align: center; width: 12.5%;">Dive3D (Ours)</div>
               <div style="text-align: center; width: 12.5%;">Dive3D (Ours)</div>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/prolificvsours/xingxing-dreamfusion1-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/xingxing-dreamfusion2-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/fanta_xingxing_row1_col1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/fanta_xingxing2_row1_col1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/xingxing-prolific1-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/xingxing-prolific2-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/xingxing_row1_col1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/xingxing_row1_col3.png" style="width: 12.5%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/prolificvsours/xingxing-dreamfusion1-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/xingxing-dreamfusion2-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/fanta_xingxing_row1_col1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/fanta_xingxing2_row1_col1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/xingxing-prolific1-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/xingxing-prolific2-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/xingxing_row1_col1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/xingxing_row1_col3.png" style="width: 12.5%; max-width: 150px; height: auto;">
             </div>
             <div style="text-align: center; margin-bottom: 20px;">
               A chimpanzee dressed like Henry VIII king of England
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/prolificvsours/dreamfusion-bunny1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/dreamfusion-bunny2.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/fanta-bunny1_row1_col1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/fanta-bunny2_row1_col1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/prolific-bunny1-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/prolificvsours/prolific-bunny3-page-00001.jpg" style="width: 12.5%;">
-              <img src="./static/images/figure/figure1-b/bunny_row1_col4.png" style="width: 12.5%;">
-              <img src="./static/images/figure/figure1-b/bunny_row1_col6.png" style="width: 12.5%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/prolificvsours/dreamfusion-bunny1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/dreamfusion-bunny2.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/fanta-bunny1_row1_col1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/fanta-bunny2_row1_col1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/prolific-bunny1-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/prolificvsours/prolific-bunny3-page-00001.jpg" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/figure1-b/bunny_row1_col4.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/figure1-b/bunny_row1_col6.png" style="width: 12.5%; max-width: 150px; height: auto;">
             </div>
             <div style="text-align: center; margin-bottom: 20px;">
               A baby bunny sitting on top of a stack of pancakes
@@ -494,41 +539,41 @@
               <div style="text-align: center; width: 12.5%;">Dive3D (Ours)</div>
               <div style="text-align: center; width: 12.5%;">Dive3D (Ours)</div>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/guitar/rgb_0.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/rgb_44.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/dr/it10000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/dr/it10000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/it16000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/it16000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/it16000-2.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/guitar/it16000-3.png_image_1.png" style="width: 12.5%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/guitar/rgb_0.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/rgb_44.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/dr/it10000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/dr/it10000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/it16000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/it16000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/it16000-2.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/guitar/it16000-3.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
             </div>
             <div style="text-align: center; margin-bottom: 20px;">
               A guitar resting against an old oak tree
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/shell/rgb_0.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/rgb_43.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/dr/it10000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/dr/it10000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/it16000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/it16000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/it16000-2.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/shell/it16000-3.png_image_1.png" style="width: 12.5%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/shell/rgb_0.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/rgb_43.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/dr/it10000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/dr/it10000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/it16000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/it16000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/it16000-2.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/shell/it16000-3.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
             </div>
             <div style="text-align: center; margin-bottom: 20px;">
               Various hollow, asymmetrical, textured seashells, collected in a sand-filled, clear glass jar with a twine-tied neck, displayed on a windowsill
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/sequence/rgb_0.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/rgb_11.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/dr/it10000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/dr/it10000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/it16000-0.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/it16000-1.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/it16000-2.png_image_1.png" style="width: 12.5%;">
-              <img src="./static/images/figure/sequence/it16000-3.png_image_1.png" style="width: 12.5%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/sequence/rgb_0.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/rgb_11.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/dr/it10000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/dr/it10000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/it16000-0.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/it16000-1.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/it16000-2.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
+              <img src="./static/images/figure/sequence/it16000-3.png_image_1.png" style="width: 12.5%; max-width: 150px; height: auto;">
             </div>
             <div style="text-align: center; margin-bottom: 20px;">
               A sequence of street lamps, casting pools of light on cobblestone paths as twilight descends
@@ -543,8 +588,8 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Score-based Divergence vs. KL Divergence</h2>
         <div class="content has-text-centered">
           <div style="margin: 20px 0;">
@@ -552,17 +597,17 @@
               <div style="text-align: center; width: 50%;">KL Divergence</div>
               <div style="text-align: center; width: 50%;">KL Divergence</div>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/scoredvskl/kl-npc.png" style="width: 45%;">
-              <img src="./static/images/figure/scoredvskl/kl-japan_all.png" style="width: 45%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/scoredvskl/kl-npc.png" style="width: 45%; max-width: 500px; height: auto;">
+              <img src="./static/images/figure/scoredvskl/kl-japan_all.png" style="width: 45%; max-width: 500px; height: auto;">
             </div>
             <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
               <div style="text-align: center; width: 50%;">Score Divergence (Ours)</div>
               <div style="text-align: center; width: 50%;">Score Divergence (Ours)</div>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <img src="./static/images/figure/scoredvskl/sim-npc.png" style="width: 45%;">
-              <img src="./static/images/figure/scoredvskl/sim-japan_all.png" style="width: 45%;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
+              <img src="./static/images/figure/scoredvskl/sim-npc.png" style="width: 45%; max-width: 500px; height: auto;">
+              <img src="./static/images/figure/scoredvskl/sim-japan_all.png" style="width: 45%; max-width: 500px; height: auto;">
             </div>
             <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
               <div style="text-align: center; width: 50%;">The blacksmith NPC in the game</div>
@@ -578,8 +623,8 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Quantitative Results</h2>
         <div class="content has-text-centered">
           <p class="has-text-justified">
