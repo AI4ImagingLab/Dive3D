@@ -1,0 +1,7 @@
+@article{Dive3D2025,
+  title   = {Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching},
+  author  = {Bai, Weimin and Li, Yubo and Chen, Wenzheng and Luo, Weijian and Sun, He},
+  journal = {Transactions on Machine Learning Research (TMLR)},
+  year    = {2025}
+}
+

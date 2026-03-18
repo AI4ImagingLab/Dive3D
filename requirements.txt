@@ -1,0 +1,17 @@
+torch
+torchvision
+numpy
+tqdm
+imageio
+opencv-python
+tensorboardX
+rich
+packaging
+einops
+torch-ema
+diffusers
+transformers
+accelerate
+safetensors
+matplotlib
+trimesh
